@@ -1,0 +1,3 @@
+# import rc in init.rc
+import init.otg.rc
+

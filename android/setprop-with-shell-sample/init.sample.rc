@@ -1,0 +1,11 @@
+# register service for log
+service sample    /system/bin/sh /system/etc/sample.sh
+    disabled
+    oneshot
+
+# switches
+on property:persist.sys.sample=1
+    start sample
+
+on property:persist.sys.sample=0
+    stop sample
